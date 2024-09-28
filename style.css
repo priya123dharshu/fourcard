@@ -1,0 +1,129 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+*{
+    box-sizing: border-box;
+}
+.container{
+    min-width:800px
+}
+.content p,h1{
+    text-align: center;
+    width: 40%;
+    margin: auto;
+    font-family: "Poppins", sans-serif;
+}
+.content p{
+    margin-bottom: 20px;
+    padding-top: 10px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 250;
+    font-size: 0.8em;
+}
+#para{
+    padding-top: 40px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 150;
+    font-size: 1.9em;
+    /* word-spacing: 20px; */
+}
+h3{
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    font-size: 1em;
+    padding: 10px;
+}
+.card{
+    border: none;
+    box-shadow: 1px 1px 10px;
+    border-radius:9px;
+    width:25%;
+    padding: 20px;
+}
+.card p{
+    padding: 10px;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    font-weight: 250;
+    font-size: 0.8em;
+}
+.cardimg{
+    margin-left: 80%;
+    width: 20%;
+    height: 30%;
+}
+.all-cards{
+    display: flex;
+    justify-content: center;
+ 
+    gap: 20px;
+}
+.card1{
+    border-top: 5px solid hsl(180, 62%, 55%);
+    height: fit-content;
+    align-self: center;
+}
+.card2{
+    border-top: 5px solid hsl(0, 78%, 62%);
+}
+.card3{
+    border-top: 5px solid hsl(34, 97%, 64%); 
+}
+.card4{
+    border-top: 5px solid hsl(212, 86%, 64%);
+    height: fit-content;
+    align-self: center;
+}
+.card2,.card3{
+    width: 100%;
+}
+.comman-div{
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    gap: 20px;
+}
+@media(max-width:450px){
+    .content p,h1{
+        text-align: center;
+        width: 100%;
+        margin: auto;
+        /* margin-bottom: 10px; */
+        font-family: "Poppins", sans-serif;
+    } 
+    h1,#para{
+        font-size: 1.5em;
+    }
+    .content p{
+        width: 80%;
+        margin-bottom: 20px;
+    }
+    .all-cards{
+        /* display: flex; */
+        flex-wrap: wrap;
+        /* width: 100%; */
+    }
+    .comman-div{
+        /* display: flex; */
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        /* margin-left: 20px; */
+    }
+    .card{
+        width: 80%;
+    }
+    .card2.card3{
+        /* width: 80%; */
+    }
+    .container{
+        width: 80%;
+        margin-left: 20px;
+        margin-bottom: 20px;
+        min-width: 450px;
+    }
+
+
+}
